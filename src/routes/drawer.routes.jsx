@@ -3,8 +3,7 @@ import { Feather } from "@expo/vector-icons";
 
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
-import Category from "../screens/Category";
-import { user } from "../data/Profile";
+import { filiaisMocadas } from "../data/Filiais";
 
 const Drawer = createDrawerNavigator();
 
@@ -31,7 +30,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen
         name="Profile"
         component={Profile}
-        initialParams={{ data: user }}
+        initialParams={{ data: filiaisMocadas }}
         options={{
           headerTitle: "",
           drawerIcon: ({ focused }) => (
